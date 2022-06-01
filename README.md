@@ -128,5 +128,11 @@ pip install cx_oracle
 
 **Finally**, you should restart superset.
 ```sh
-sudo systemctl restart nifi.service
+sudo systemctl restart superset.service
 ```
+
+Example SQLALCHEMY URI
+```sh
+oracle+cx_oracle://<user>:<password>@<host>:1521/?service_name=<service_name>
+```
+
